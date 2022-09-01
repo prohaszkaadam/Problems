@@ -1,47 +1,48 @@
 ﻿using LeetCodeProblems;
 using LeetCodeProblems.Array101;
 using LeetCodeProblems.LinkedList;
+using LeetCodeProblems.Queue;
 
-Problem13 problem = new Problem13();
+//Problem13 problem = new Problem13();
 
-problem.RomanToInt("MCMXIV");
+//problem.RomanToInt("MCMXIV");
 
-MaxConsecutiveOnes max = new MaxConsecutiveOnes();
+//MaxConsecutiveOnes max = new MaxConsecutiveOnes();
 
-int[] nums = new int[11] { 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1 };
+//int[] nums = new int[11] { 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1 };
 
-max.FindMax(nums);
+//max.FindMax(nums);
 
-FindNumbersWithEvenNumberOfDigits find = new FindNumbersWithEvenNumberOfDigits();
+//FindNumbersWithEvenNumberOfDigits find = new FindNumbersWithEvenNumberOfDigits();
 
-int[] nums2 = new int[] { 12, 345, 2, 6, 7896 };
+//int[] nums2 = new int[] { 12, 345, 2, 6, 7896 };
 
-find.FindNumbers(nums2);
-find.FindNumbersWithLinq(nums2);
+//find.FindNumbers(nums2);
+//find.FindNumbersWithLinq(nums2);
 
-SquaresOfASortedArray squares = new SquaresOfASortedArray();
+//SquaresOfASortedArray squares = new SquaresOfASortedArray();
 
-int[] nums3 = new int[] { -4, -1, 0, 3, 10 };
+//int[] nums3 = new int[] { -4, -1, 0, 3, 10 };
 
-var ads = squares.SortedSquares(nums3);
+//var ads = squares.SortedSquares(nums3);
 
-DuplicateZeros duplicateZeros = new DuplicateZeros();
+//DuplicateZeros duplicateZeros = new DuplicateZeros();
 
-//int[] nums4 = new int[] { 1, 0, 2, 3, 0, 4, 5, 0 };
-//int[] nums4 = new int[] { 8, 5, 0, 9, 0, 3, 4, 7 };
-//int[] nums4 = new int[] { 0, 1, 7, 6, 0, 2, 0, 7 };
-int[] nums4 = new int[] { 0, 0, 0, 0, 0, 0, 0 };
+////int[] nums4 = new int[] { 1, 0, 2, 3, 0, 4, 5, 0 };
+////int[] nums4 = new int[] { 8, 5, 0, 9, 0, 3, 4, 7 };
+////int[] nums4 = new int[] { 0, 1, 7, 6, 0, 2, 0, 7 };
+//int[] nums4 = new int[] { 0, 0, 0, 0, 0, 0, 0 };
 
-duplicateZeros.DupeZeros(nums4);
+//duplicateZeros.DupeZeros(nums4);
 
-MyLinkedList list = new MyLinkedList();
-list.AddAtHead(2);
-list.DeleteAtIndex(1);
-;
-list.Get(0);
-;
+//MyLinkedList list = new MyLinkedList();
+//list.AddAtHead(2);
+//list.DeleteAtIndex(1);
+//;
+//list.Get(0);
+//;
 
-ReverseLinkedList reverse = new ReverseLinkedList();
+//ReverseLinkedList reverse = new ReverseLinkedList();
 //ListNode head = new ListNode();
 //ListNode first = new ListNode();
 //ListNode second = new ListNode();
@@ -63,34 +64,73 @@ ReverseLinkedList reverse = new ReverseLinkedList();
 
 //reverse.ReverseList(head);
 
-RemoveLinkedListElements removeLinkedListElements = new RemoveLinkedListElements();
+//RemoveLinkedListElements removeLinkedListElements = new RemoveLinkedListElements();
 
-ListNode head = new ListNode();
-ListNode first = new ListNode();
-ListNode second = new ListNode();
-ListNode third = new ListNode();
-ListNode fourth = new ListNode();
-ListNode fifth = new ListNode();
-ListNode sixth = new ListNode();
-head.val = 1;
-head.next = first;
+//ListNode head = new ListNode();
+//ListNode first = new ListNode();
+//ListNode second = new ListNode();
+//ListNode third = new ListNode();
+//ListNode fourth = new ListNode();
+//ListNode fifth = new ListNode();
+//ListNode sixth = new ListNode();
+//head.val = 1;
+//head.next = first;
 
-first.val = 2;
-first.next = second;
+//first.val = 2;
+//first.next = second;
 
-second.val = 6;
-second.next = third;
+//second.val = 6;
+//second.next = third;
 
-third.val = 3;
-third.next = fourth;
+//third.val = 3;
+//third.next = fourth;
 
-fourth.val = 4;
-fourth.next = fifth;
+//fourth.val = 4;
+//fourth.next = fifth;
 
-fifth.val = 5;
-fifth.next = sixth;
+//fifth.val = 5;
+//fifth.next = sixth;
 
-sixth.val = 6;
+//sixth.val = 6;
 
-removeLinkedListElements.RemoveElements(head, 6);
+//removeLinkedListElements.RemoveElements(head, 6);
+
+//DoublyLinkedList doubly = new DoublyLinkedList();
+
+//doubly.AddAtHead(4);
+//doubly.Get(1);
+//doubly.AddAtHead(1);
+//doubly.AddAtHead(5);
+//doubly.DeleteAtIndex(3);
+//doubly.AddAtHead(7);
+//doubly.Get(3);
+//doubly.Get(3);
+//doubly.Get(3);
+//doubly.AddAtHead(1);
+//doubly.DeleteAtIndex(4);
+
+CircularQueue queue = new CircularQueue(7);
+queue.EnQueue(0);
+queue.Front();
+queue.EnQueue(4);
+queue.Rear();
+queue.EnQueue(6);
+queue.EnQueue(3);
+queue.Rear();
+queue.DeQueue();
+queue.Front();
+queue.DeQueue();
+queue.Front();
+
+
+queue.DeQueue();
+queue.Front();
+//queue.DeQueue();
+//queue.Front();
+queue.Rear();
+//queue.EnQueue(0);
+queue.IsFull();
+//queue.DeQueue();
+//queue.Rear();
+//queue.EnQueue(3);
 ;
